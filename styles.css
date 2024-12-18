@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* Crește marginea de sus */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Culoare de fundal pentru buton */
+    border: none;
+    /* Elimină bordura butonului */
+    border-radius: 5px;
+    /* Colțuri rotunjite pentru buton */
+    transition: background-color 0.3s;
+    /* Tranziție pentru culoarea de fundal */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Culoare mai închisă la hover */
+}
+
+.card {
+    margin-bottom: 20px;
+    /* Spațiu între carduri */
+    border: none;
+    /* Elimină bordura implicită */
+    border-radius: 10px;
+    /* Colțuri rotunjite */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Umbră subtilă */
+    opacity: 0;
+    /* Animație de fade-in pentru carduri */
+    animation: fadeIn 0.5s forwards;
+    /* Animație de fade-in pentru carduri */
+}
+
+.card:nth-child(1) {
+    background-color: #9398c0;
+    /* Culoare deschisă pentru primul card */
+}
+
+.card:nth-child(2) {
+    background-color: #e9ecef;
+    /* Culoare gri deschis pentru al doilea card */
+}
+
+.card:nth-child(3) {
+    background-color: #d1ecf1;
+    /* Culoare albastră deschisă pentru al treilea card */
+}
+
+.card-body {
+    padding: 20px;
+    /* Spațiu interior pentru card */
+}
+
+.card-title {
+    font-weight: 700;
+    /* Font mai îndrăzneț pentru titlu */
+    color: #007bff;
+    /* Culoare albastră pentru titlu */
+}
+
+.card-text {
+    color: #555;
+    /* Culoare gri închis pentru text */
+    line-height: 1.6;
+    /* Întreținerea rândurilor */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efect de ridicare la hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Umbră mai pronunțată la hover */
+}
+
+.footer {
+    background-color: #222;
+    /* Culoare de fundal pentru footer */
+    color: #ffffff;
+    /* Culoare text pentru footer */
+    padding: 20px;
+    /* Spațiu interior pentru footer */
+    text-align: center;
+    /* Aliniere text la centru */
+    border-top: 1px solid #444;
+    /* Linie de separare */
+}
+
+.navbar {
+    padding: 20px 40px;
+    /* Spațiu interior mai generos pentru navbar */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    /* Mărimea fontului pentru brand */
+    margin-right: 50px;
+    /* Spațiu între brand și linkuri */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 30px;
+    /* Spațiu mai mare între elementele de navigare */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    /* Mărimea fontului pentru linkuri */
+    transition: color 0.3s;
+    /* Tranziție pentru culoarea linkurilor */
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    /* Culoare la hover pentru linkuri */
+}
+
+/* Adăugăm un spațiu suplimentar pentru a face navbar-ul mai aerisit */
+.navbar-nav {
+    margin-left: auto;
+    /* Asigură că linkurile sunt aliniate la dreapta */
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    /* Gradient pentru header */
+    color: white;
+    /* Culoare text pentru header */
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    /* Colțuri rotunjite pentru câmpurile formularului */
+    border: 1px solid #ced4da;
+    /* Bordură pentru câmpurile formularului */
+    margin-bottom: 15px;
+    /* Spațiu între câmpurile formularului */
+}
+
+.fade-in {
+    opacity: 0;
+    /* Opacitate inițială pentru animație */
+    animation: fadeIn 1s forwards;
+    /* Animație de fade-in */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        /* Opacitate finală pentru animație */
+    }
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    /* Culoare de bordură la focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Umbră la focus */
+}
